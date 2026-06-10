@@ -8,11 +8,11 @@ auth_level = func.AuthLevel.FUNCTION if settings.enable_auth else func.AuthLevel
 
 app = func.FunctionApp()
 
-@app.function_name("DocumentAgentOrchestrator")
-@app.route(route="document-orchestrate", auth_level=auth_level)
+@app.function_name("AgentOrchestrator")
+@app.route(route="loan-orchestrate", auth_level=auth_level)
 def document_agent_orchestrator(req: func.HttpRequest) -> func.HttpResponse:
     """
-    Main orchestrator for document agent - routes to other agents
+    Main orchestrator for loan agents - routes to other agents
     """
     name = req.params.get('name')
     if not name:

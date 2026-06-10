@@ -1,2 +1,49 @@
+# ── Azure Functions ──────────────────────────────────────────────────────────
 azure-functions
 azure-storage-blob
+
+# ── LangChain core ──────────────────────────────────────────────────────────
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# ── LangGraph ───────────────────────────────────────────────────────────────
+langgraph
+
+# ── LLM integrations ────────────────────────────────────────────────────────
+langchain-google-genai
+google-generativeai
+
+langchain-openai
+openai
+
+langchain-anthropic
+
+langchain-huggingface
+transformers
+huggingface-hub
+
+# ── OCR stack ───────────────────────────────────────────────────────────────
+pytesseract          # Tesseract 5.5 must be installed + nep tessdata
+pdf2image            # Poppler v26.02.0 must be installed
+Pillow
+opencv-python
+
+# ── Vector stores / ML ──────────────────────────────────────────────────────
+langchain-chroma
+faiss-cpu
+numpy
+scikit-learn
+sentence-transformers
+
+# ── Environment / config ─────────────────────────────────────────────────────
+python-dotenv
+pydantic
+
+# ── MCP ─────────────────────────────────────────────────────────────────────
+mcp
+langchain_mcp_adapters
+
+# ── UI (optional local testing) ──────────────────────────────────────────────
+streamlit
