@@ -38,3 +38,5 @@ env/
 .idea/
 *.swp
 *.swo
+
+.env.local

@@ -1,6 +1,8 @@
-# ── Azure Functions ──────────────────────────────────────────────────────────
+# ── Azure Functions 
+azure
 azure-functions
-azure-storage-blob
+azure-storage-blob==12.29.0
+azure-core==1.41.0
 
 # ── LangChain core ──────────────────────────────────────────────────────────
 langchain
@@ -47,3 +49,8 @@ langchain_mcp_adapters
 
 # ── UI (optional local testing) ──────────────────────────────────────────────
 streamlit
+
+
+
+#firebase 
+firebase_admin

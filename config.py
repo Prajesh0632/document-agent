@@ -18,11 +18,9 @@ class Settings:
     """Configuration settings for different environments."""
 
     def __init__(self):
-        self.environment:            str  = os.getenv("ENVIRONMENT",              "local")
+        self.ENV:            str  = os.getenv("ENVIRONMENT",              "development")
         self.log_level:              str  = os.getenv("LOG_LEVEL",                "DEBUG")
-        self.storage_connection:     str  = os.getenv("STORAGE_CONNECTION_STRING", "UseDevelopmentStorage=true")
-        self.database_url:           str  = os.getenv("DATABASE_URL",             "http://localhost:8000")
-        self.api_key:                str  = os.getenv("API_KEY",                  "")
+       
         self.enable_auth:            bool = os.getenv("ENABLE_AUTH",              "false").lower() == "true"
 
         # Gemini Flash (free tier) — required for field extraction
@@ -33,6 +31,14 @@ class Settings:
 
         # Tesseract executable path (Windows only; leave blank if on PATH)
         self.tesseract_cmd:          str  = os.getenv("TESSERACT_CMD",            "")
+
+        self.FIREBASE_KEY_PATH = os.getenv("FIREBASE_KEY_PATH", "serviceAccountKey.json")
+        self.FIREBASE_KEY_JSON = os.getenv("FIREBASE_KEY_JSON")
+
+        self.AZURE_STORAGE_CONNECTION_STRING = os.getenv("AZURE_STORAGE_CONNECTION_STRING")
+        
+
+        self.DOCUMENT_VERIFICATION_API = os.getenv("DOCUMENT_API_PATH")
 
     @property
     def is_local(self) -> bool:

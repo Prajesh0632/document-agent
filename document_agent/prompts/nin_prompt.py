@@ -22,6 +22,7 @@ Use whichever pass gives the cleaner value for each field.
 2. Extract "राष्ट्रिय परिचय नम्बर" (National Identity Number / NIN).
    Preserve dashes exactly as they appear (format: XXX-XXX-XXX-X).
    Extract it exactly as it appears in the Devanagari section.
+   And remove the dashes '-' and make it a string.
 
 3. Extract "First Name" and "Last Name" from the English/Latin character section.
    Convert to Title Case (e.g. "Manoj", "Niraula").
